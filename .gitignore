@@ -1,0 +1,16 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python (in case any swap-script artifacts land here by mistake)
+__pycache__/
+*.pyc
+
+# This folder is asset-only. HTML/JSON/scripts belong in Downloads/outputs/, not here.
+*.json
+*-backup.html
+*-TEST.eml
