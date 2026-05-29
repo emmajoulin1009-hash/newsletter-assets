@@ -10,7 +10,9 @@ Thumbs.db
 __pycache__/
 *.pyc
 
-# This folder is asset-only. HTML/JSON/scripts belong in Downloads/outputs/, not here.
-*.json
-*-backup.html
-*-TEST.eml
+# Never commit secrets — multiple safety nets
+.env
+*.env
+GITHUB_PAT*
+
+# This folder is asset-only. HTML/JSON/scripts 
