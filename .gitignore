@@ -15,4 +15,7 @@ __pycache__/
 *.env
 GITHUB_PAT*
 
-# This folder is asset-only. HTML/JSON/scripts 
+# This folder is asset-only. HTML/JSON/scripts belong in Downloads/outputs/, not here.
+*.json
+*-backup.html
+*-TEST.eml

@@ -45,4 +45,4 @@ python3 host-images-swap.py
 
 ## Not a code repo
 
-Don't add scripts, drafts, or HTML here — this is asset-only. The newsletter HTML generators live in `Downloads/outputs/` and reference these URLs at send time via `host-images-sw
+Don't add scripts, drafts, or HTML here — this is asset-only. The newsletter HTML generators live in `Downloads/outputs/` and reference these URLs at send time via `host-images-swap.py`.
