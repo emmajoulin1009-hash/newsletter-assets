@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<title>Parallax · The Brief · 15 Jun 2026</title>
+<!-- Instrument Serif for the editorial "The Brief" label; Georgia / Times fallback when webfont is stripped -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+<style type="text/css">
+  body, table, td, p, a, h1, h2, h3 { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; }
+  body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#ECEEF1; }
+  /* Lock dark mode, keep navy panels navy, not auto-inverted */
+  :root { color-scheme: light only; supported-color-schemes: light only; }
+  [data-ogsc] .navy-bg, [data-ogsb] .navy-bg { background-color:#0B1B3F !important; }
+  [data-ogsc] .ticker-bg, [data-ogsb] .ticker-bg { background-color:#0B1B3F !important; }
+  [data-ogsc] .panel-bg, [data-ogsb] .panel-bg { background-color:#F2F4F6 !important; }
+  [data-ogsc] .white-bg, [data-ogsb] .white-bg { background-color:#FFFFFF !important; }
+  [data-ogsc] .navy-text, [data-ogsb] .navy-text { color:#0B1B3F !important; }
+  [data-ogsc] .white-text, [data-ogsb] .white-text { color:#FFFFFF !important; }
+  /* Background locks for clients that respect prefers-color-scheme (Apple Mail), keep brand colors stable when the device is in dark mode. Outlined buttons stay navy because the white bg they sit on stays white via the .white-bg lock. */
+  [data-ogsc] .alert-bg, [data-ogsb] .alert-bg { background-color:#E3F0FF !important; }
+  @media (prefers-color-scheme: dark) {
+    .ticker-bg { background-color:#0B1B3F !important; }
+    .navy-bg { background-color:#0B1B3F !important; }
+    .panel-bg { background-color:#F2F4F6 !important; }
+    .white-bg { background-color:#FFFFFF !important; }
+    .alert-bg { background-color:#E3F0FF !important; }
+  }
+  /* Gmail mobile dark-wrapper selectors, keep ONLY background locks, no color swaps, so outlined buttons stay navy on locked-white bg */
+  u + .body .ticker-bg, .gmail-dark .ticker-bg, .darkmode .ticker-bg { background-color:#0B1B3F !important; }
+  u + .body .navy-bg, .gmail-dark .navy-bg, .darkmode .navy-bg { background-color:#0B1B3F !important; }
+  u + .body .panel-bg, .gmail-dark .panel-bg, .darkmode .panel-bg { background-color:#F2F4F6 !important; }
+  u + .body .white-bg, .gmail-dark .white-bg, .darkmode .white-bg { background-color:#FFFFFF !important; }
+  u + .body .alert-bg, .gmail-dark .alert-bg, .darkmode .alert-bg { background-color:#E3F0FF !important; }
+  @media screen and (max-width: 600px) {
+    .container { width:100% !important; max-width:100% !important; }
+    /* All tables collapse to full-width on mobile */
+    table { width:100% !important; }
+    .stack { display:block !important; width:100% !important; box-sizing:border-box !important; }
+    .stack-gap { display:block !important; width:100% !important; height:12px !important; line-height:12px !important; font-size:0 !important; background-color:#FFFFFF !important; }
+    .px-lg { padding-left:16px !important; padding-right:16px !important; padding-top:24px !important; padding-bottom:24px !important; }
+    .h1-mob { font-size:26px !important; }
+    .h2-mob { font-size:20px !important; }
+    .hide-mob { display:none !important; max-height:0 !important; overflow:hidden !important; mso-hide:all !important; }
+    .ticker-row { font-size:10px !important; padding:8px 16px !important; letter-spacing:0.4px !important; }
+    .stat-cell { display:block !important; width:100% !important; box-sizing:border-box !important; padding:14px 12px !important; border-right:none !important; border-bottom:1px solid #D9DDE2 !important; }
+    .stat-lbl { font-size:9.5px !important; letter-spacing:1.2px !important; }
+    .stat-val { font-size:18px !important; }
+    /* Body text min 14px on mobile */
+    p { font-size:14px !important; }
+    /* Buttons: full-width, tappable, centred */
+    .btn-mob { font-size:13px !important; }
+    .holding-name-mob { font-size:13px !important; }
+    .holding-wt-mob, .holding-tag-mob { font-size:12px !important; }
+    /* Multi-button rows: stack vertically, each full-width and tap-friendly on phones */
+    .btn-stack { display:block !important; width:100% !important; box-sizing:border-box !important; margin-bottom:10px !important; }
+    .btn-stack-last { display:block !important; width:100% !important; box-sizing:border-box !important; margin-bottom:0 !important; }
+    .btn-spacer { display:none !important; width:0 !important; height:0 !important; font-size:0 !important; line-height:0 !important; mso-hide:all !important; }
+    .btn-mob-block { display:block !important; width:100% !important; box-sizing:border-box !important; text-align:center !important; padding:14px 12px !important; min-height:44px !important; line-height:16px !important; }
+    /* All images scale down */
+    img { max-width:100% !important; height:auto !important; }
+    /* Prevent any fixed-width inner cells from causing overflow */
+    td { max-width:100% !important; }
+  }
+</style>
+</head>
+<body class="body" style="margin:0;padding:0;background-color:#ECEEF1;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3A3F47;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ECEEF1" style="background-color:#ECEEF1;">
+<tr><td align="center" style="padding:24px 8px;">
+
+<table role="presentation" class="container" cellpadding="0" cellspacing="0" border="0" width="680" style="width:680px;max-width:680px;background-color:#FFFFFF;table-layout:fixed;" bgcolor="#FFFFFF">
+
+<!-- ============ MARQUEE, animated GIF, regenerated weekly ============ -->
+<tr><td bgcolor="#0B1B3F" align="center" style="background-color:#0B1B3F;padding:0;font-size:0;line-height:0;">
+  <img src="https://emmajoulin1009-hash.github.io/newsletter-assets/marquee.gif" alt="Vol. 2026 / 27 &middot; 15 Jun &middot; Regime SELECTIVE ROTATION &middot; S&amp;P 500 ~7,267 &middot; 10Y 4.47% &middot; FOMC 17 Jun &middot; Brent ~$80" width="680" height="30" border="0" style="display:block;width:100%;max-width:680px;height:auto;border:0;outline:none;text-decoration:none;background-color:#0B1B3F;">
+</td></tr>
+
+<!-- ============ BRAND BAR, tight centered stack ============ -->
+<tr><td bgcolor="#FFFFFF" class="white-bg" style="background-color:#FFFFFF;border-bottom:1px solid #E5E7EB;padding:8px 32px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+      <td class="hide-mob" width="33%" align="left" valign="middle" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6B7280;">15 Jun 2026</td>
+      <td width="34%" align="center" valign="middle">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr>
+          <td align="center" style="padding:0;line-height:0;"><img src="https://emmajoulin1009-hash.github.io/newsletter-assets/parallax-logo-brand.png" alt="Parallax" width="70" height="39" border="0" style="display:block;border:0;outline:none;text-decoration:none;width:70px;height:39px;margin:0 auto;"></td>
+        </tr><tr>
+          <td align="center" style="font-family:'Inter',sans-serif;font-size:18px;font-weight:400;color:#0B1B3F;letter-spacing:2px;line-height:1;text-align:center;padding-top:1px;;text-transform:uppercase">Parallax</td>
+        </tr></table>
+      </td>
+      <td class="hide-mob" width="33%" align="right" valign="middle" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#6B7280;">Vol. <span style="color:#0B1B3F;font-weight:700;">2026 / 27</span></td>
+    </tr>
+  </table>
+</td></tr>
+
+<!-- ============ HERO ============ -->
+<tr><td bgcolor="#FFFFFF" class="white-bg px-lg" style="background-color:#FFFFFF;padding:40px 32px 32px;border-bottom:1px solid #E5E7EB;text-align:center;">
+  <p style="font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;font-weight:400;color:#0B1B3F;letter-spacing:0;text-align:center;margin:0 0 16px 0;line-height:1.1;">The Brief</p>
+  <h1 class="h1-mob navy-text" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:34px;font-weight:700;color:#0B1B3F;text-align:center;margin:0 0 16px 0;letter-spacing:-0.02em;line-height:1.2;">Chips and Gold Lead a Narrow Tape. The Fed Decides Today.</h1>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#6B7280;text-align:center;margin:0 auto;line-height:1.6;max-width:520px;">Semis round-tripped a trillion-dollar selloff and led the rebound; gold miners ran with bullion near records. Brent slid toward $80 as US&ndash;Iran de-escalation reopened Hormuz. Parallax telemetry shows a selective rotation, only 18 of 39 markets positive, as Kevin Warsh chairs his first FOMC.</p>
+</td></tr>
+
+<!-- ============ EDITORIAL SPLIT (no gap between snapshot and memo) ============ -->
+<tr><td bgcolor="#FFFFFF" class="white-bg px-lg" style="background-color:#FFFFFF;padding:32px 0;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+      <!-- Telemetry snapshot (navy) -->
+      <td class="stack navy-bg" width="55%" valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:24px 22px;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#A5B4C7;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;">Telemetry Snapshot &nbsp;&middot;&nbsp; 15 Jun 2026</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#FFFFFF;margin:0 0 20px 0;letter-spacing:-0.01em;line-height:1.3;">Selective rotation as semis round-trip a trillion-dollar selloff and gold miners run with bullion near records. Brent slid toward $80; the FOMC decides today.</p>
+
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td width="50%" valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 8px 8px 0;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">Regime</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:700;color:#E5B23C;margin:0;letter-spacing:-0.005em;">SELECTIVE ROTATION</p>
+            </td>
+            <td width="50%" valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 0 8px 8px;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">Markets up</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#E5B23C;margin:0;letter-spacing:-0.005em;">18/39</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 8px 8px 0;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">Semis Asia WTD</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#6AC893;margin:0;letter-spacing:-0.005em;">+14.9%</p>
+            </td>
+            <td valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 0 8px 8px;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">Energy WTD</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#E89090;margin:0;letter-spacing:-0.005em;">&minus;5.4%</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 8px 8px 0;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">Precious Metals WTD</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#6AC893;margin:0;letter-spacing:-0.005em;">+9.4%</p>
+            </td>
+            <td valign="top" bgcolor="#0B1B3F" style="background-color:#0B1B3F !important;padding:8px 0 8px 8px;border-top:1px solid #2B3F5C;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#8995AB;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;">US Semis WTD</p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#E89090;margin:0;letter-spacing:-0.005em;">&minus;0.8%</p>
+            </td>
+          </tr>
+        </table>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;color:#8995AB;margin:14px 0 0 0;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Source &middot; Parallax Telemetry &middot; 16 Jun 2026 close</p>
+      </td>
+
+      <!-- IN THIS MEMO (grey panel), no gap, touches the navy snapshot -->
+      <td class="stack panel-bg" width="45%" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6 !important;padding:24px 22px;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;">In this memo</p>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr><td colspan="2" style="border-top:1px solid #D9DDE2;height:1px;line-height:1px;font-size:0;">&nbsp;</td></tr>
+          <tr>
+            <td width="32" valign="top" style="padding:12px 10px 12px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;color:#0B1B3F;border-bottom:1px solid #D9DDE2;">01</td>
+            <td valign="top" style="padding:12px 0;border-bottom:1px solid #D9DDE2;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;"><a href="#this-week" style="color:#0B1B3F;text-decoration:none;">This Week</a></p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.45;">The Fed decides today, chips round-trip a trillion-dollar selloff, oil slides toward $80.</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding:12px 10px 12px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;color:#0B1B3F;border-bottom:1px solid #D9DDE2;">02</td>
+            <td valign="top" style="padding:12px 0;border-bottom:1px solid #D9DDE2;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;"><a href="#portfolio" style="color:#0B1B3F;text-decoration:none;">Portfolio of the Week</a></p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.45;">Entered the chip rebound Monday. Rotated to gold miners Wednesday. +6.54% vs ACWI +2.21%.</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding:12px 10px 12px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;color:#0B1B3F;border-bottom:1px solid #D9DDE2;">03</td>
+            <td valign="top" style="padding:12px 0;border-bottom:1px solid #D9DDE2;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;"><a href="#checks" style="color:#0B1B3F;text-decoration:none;">Three Checks This Week</a></p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.45;">US semi-equipment fatigue, the gold-miner leadership leg, and the rate path into today&rsquo;s FOMC.</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding:12px 10px 12px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;color:#0B1B3F;">04</td>
+            <td valign="top" style="padding:12px 0;">
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 3px 0;"><a href="#platform" style="color:#0B1B3F;text-decoration:none;">Parallax Updates</a></p>
+              <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.45;">What shipped this cycle: AI Builder, REST, MCP.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<!-- ============ CARD 01, THIS WEEK ============ -->
+<tr><td id="this-week" bgcolor="#FFFFFF" class="white-bg px-lg" style="background-color:#FFFFFF;padding:24px 32px;border-top:1px solid #E5E7EB;">
+  <a name="this-week"></a>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;"><span style="display:inline-block;width:24px;height:24px;background-color:#0B1B3F;color:#FFFFFF;border-radius:50%;text-align:center;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;margin-right:10px;vertical-align:middle;">01</span> Markets This Week &nbsp;&middot;&nbsp; Rolling 7 days to 16 Jun 2026</p>
+  <h2 class="h2-mob" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;color:#0B1B3F;margin:0 0 24px 0;letter-spacing:-0.015em;line-height:1.25;">Three moves that reshaped the factor map.</h2>
+
+  <h3 style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 10px 0;">The Fed Decides Today; Warsh Chairs His First Meeting</h3>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.55;">The FOMC concludes today with a hold widely expected, target <strong>3.50&ndash;3.75%</strong> (CME near 97% no-change). Markets watch the dot plot and Warsh&rsquo;s first press conference for the path into year-end; inflation at a three-year high has shifted the bias from easing toward neutral.</p>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 22px 0;"><tr><td width="3" bgcolor="#0B1B3F" style="background-color:#0B1B3F;width:3px;line-height:1px;font-size:1px;">&nbsp;</td><td style="padding:2px 0 2px 14px;"><p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0;line-height:1.55;"><strong style="color:#0B1B3F;">Portfolio impact:</strong> A hold is priced; the path matters more than the level. A hawkish dot plot would pressure rate-sensitive property and long-duration growth.</p></td></tr></table>
+
+  <h3 style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 10px 0;">Chips Round-Trip a Trillion-Dollar Selloff, Then Lead the Rebound</h3>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.55;">A roughly <strong>$1.4T</strong> AI-semis drawdown (SOX <strong>&minus;10%</strong> on 6 Jun, Broadcom <strong>&minus;12.6%</strong>) reversed sharply this week: Micron <strong>+9.9%</strong>, Intel <strong>+11.2%</strong> early-week as buyers treated the dip as technical. Parallax flags US semi-equipment fatigue (YTD <strong>+82.4%</strong>) even as Asia semis lead.</p>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 22px 0;"><tr><td width="3" bgcolor="#0B1B3F" style="background-color:#0B1B3F;width:3px;line-height:1px;font-size:1px;">&nbsp;</td><td style="padding:2px 0 2px 14px;"><p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0;line-height:1.55;"><strong style="color:#0B1B3F;">Portfolio impact:</strong> The rebound is led by Asia semis and the dip-buyers; crowded US semi-equipment looks extended on a YTD basis. Check where your chip exposure actually sits.</p></td></tr></table>
+
+  <h3 style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 10px 0;">Oil Slides Toward $80 as US&ndash;Iran De-escalation Reopens Hormuz</h3>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.55;">Brent fell roughly <strong>3%</strong> Tuesday and <strong>4.8%</strong> Monday to near <strong>$80</strong>, a fourth straight down session and the lowest since early March, after a US&ndash;Iran agreement to reopen the Strait of Hormuz; OPEC+ quotas and UAE output add supply. US Oilfield Services <strong>&minus;5.4% WTD</strong> was the weakest global basket.</p>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 22px 0;"><tr><td width="3" bgcolor="#0B1B3F" style="background-color:#0B1B3F;width:3px;line-height:1px;font-size:1px;">&nbsp;</td><td style="padding:2px 0 2px 14px;"><p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0;line-height:1.55;"><strong style="color:#0B1B3F;">Portfolio impact:</strong> The Hormuz risk premium is draining out fast; energy and oilfield services led the downside, easing the inflation overhang into the FOMC.</p></td></tr></table>
+
+  <!-- BULLETPROOF BUTTON -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#0B1B3F" class="navy-bg btn-stack" style="background-color:#0B1B3F !important;padding:0;"><a href="https://parallax.chicago.global/assessment" class="btn-mob btn-mob-block" style="display:inline-block;background-color:#0B1B3F;color:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:13px 22px;text-decoration:none;letter-spacing:-0.005em;mso-padding-alt:0;">Run Impact Assessment</a></td></tr></table>
+</td></tr>
+
+<!-- ============ CARD 02, PORTFOLIO OF THE WEEK ============ -->
+<tr><td id="portfolio" bgcolor="#FFFFFF" class="white-bg px-lg" style="background-color:#FFFFFF;padding:24px 32px;border-top:1px solid #E5E7EB;">
+  <a name="portfolio"></a>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;"><span style="display:inline-block;width:24px;height:24px;background-color:#0B1B3F;color:#FFFFFF;border-radius:50%;text-align:center;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;margin-right:10px;vertical-align:middle;">02</span> Portfolio of the Week &nbsp;&middot;&nbsp; Parallax Builder</p>
+  <h2 class="h2-mob" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;color:#0B1B3F;margin:0 0 4px 0;letter-spacing:-0.015em;line-height:1.25;">Entered the Chip Rebound Monday, Rotated to Gold Miners Wednesday.</h2>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-style:italic;color:#6B7280;margin:0 0 22px 0;">Generated by Parallax &middot; benchmark MSCI ACWI &middot; period 8 to 16 June 2026 &middot; one rebalance 10 June &middot; rotation added +1.30pp vs the static hold</p>
+
+  <!-- Stat quad, sans-serif numbers, vertically aligned -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#F2F4F6" class="panel-bg" style="background-color:#F2F4F6;margin:0 0 22px 0;"><tr>
+    <td class="stack stat-cell" width="33%" align="center" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6;padding:20px 6px;border-right:1px solid #D9DDE2;">
+      <p class="stat-lbl" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;height:14px;line-height:14px;">Return</p>
+      <p class="stat-val" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;color:#3F8E5C;margin:0;letter-spacing:-0.02em;line-height:1.1;">+6.54%</p>
+    </td>
+    <td class="stack stat-cell" width="33%" align="center" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6;padding:20px 6px;border-right:1px solid #D9DDE2;">
+      <p class="stat-lbl" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;height:14px;line-height:14px;">Benchmark (ACWI)</p>
+      <p class="stat-val" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;color:#3F8E5C;margin:0;letter-spacing:-0.02em;line-height:1.1;">+2.21%</p>
+    </td>
+    <td class="stack stat-cell" width="33%" align="center" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6;padding:20px 6px;">
+      <p class="stat-lbl" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;height:14px;line-height:14px;">Holdings</p>
+      <p class="stat-val" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;color:#0B1B3F;margin:0;letter-spacing:-0.02em;line-height:1.1;">14</p>
+    </td>
+  </tr></table>
+
+  <!-- ROTATION NARRATIVE, plain prose, no panel background -->
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:24px 0 22px 0;line-height:1.65;">Entered the <strong style="color:#0B1B3F;">AI-compute and semi-equipment rebound</strong> equal-weight on 8 June; by Wednesday 10 June Parallax flagged a fatigue divergence in the crowded US and Korea semiconductor leadership, and the book rotated half the basket into the precious-metals-miner rebound and defensive staples. Held statically this entry basket returned <strong style="color:#3F8E5C;">+5.24%</strong> over the window; rotated, the book returned <strong style="color:#3F8E5C;">+6.54%</strong> vs ACWI <strong style="color:#3F8E5C;">+2.21%</strong>, a +4.32pp excess.</p>
+
+  <!-- Phase 1, entry 19 May, wrapped in a grey panel for visual grouping -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#F2F4F6" class="panel-bg" style="background-color:#F2F4F6;">
+    <tr><td style="padding:18px 20px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td colspan="3" style="padding:0 0 6px 0;border-bottom:2px solid #0B1B3F;">
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:700;color:#0B1B3F;letter-spacing:2px;text-transform:uppercase;margin:0;">Phase 1 &middot; Entry &middot; 8 June</p>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" class="holding-name-mob" style="padding:13px 0;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#0B1B3F;">NVDA &middot; AVGO &middot; MU &middot; AMD &middot; ARM &middot; TSM &middot; INTC</td>
+          <td align="right" valign="middle" width="50" class="holding-wt-mob" style="padding:13px 16px 13px 8px;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#3A3F47;">50%</td>
+          <td align="right" valign="middle" width="100" class="holding-tag-mob" style="padding:13px 0;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#3A3F47;">AI Compute</td>
+        </tr>
+        <tr>
+          <td valign="middle" class="holding-name-mob" style="padding:13px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#0B1B3F;">MRVL &middot; LRCX &middot; AMAT &middot; KLAC &middot; ASML &middot; MSFT &middot; GOOGL</td>
+          <td align="right" valign="middle" class="holding-wt-mob" style="padding:13px 16px 13px 8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#3A3F47;">50%</td>
+          <td align="right" valign="middle" class="holding-tag-mob" style="padding:13px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#3A3F47;">Semi Equipment</td>
+        </tr>
+        <tr><td colspan="3" style="padding:10px 0 0 0;"><p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-style:italic;color:#6B7280;margin:0;line-height:1.5;">The AI-compute and semi-equipment rebound; held statically this basket returned +5.24% over the window.</p></td></tr>
+      </table>
+    </td></tr>
+  </table>
+
+  <!-- ROTATION TRIGGER, blue alert panel marks the rebalance moment -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:18px 0 0 0;">
+    <tr>
+      <td width="4" bgcolor="#4A90D9" style="background-color:#4A90D9;width:4px;padding:0;font-size:0;line-height:0;"></td>
+      <td class="alert-bg" bgcolor="#E3F0FF" style="background-color:#E3F0FF;padding:14px 18px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+        <td width="36" valign="middle" style="padding-right:14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:26px;color:#4A90D9;font-weight:700;line-height:1;">&darr;</td>
+        <td valign="middle">
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:700;color:#1E5C9F;letter-spacing:2px;text-transform:uppercase;margin:0 0 3px 0;">Rotation Trigger &middot; 10 June 2026</p>
+          <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#0B1B3F;margin:0;line-height:1.45;">Parallax flagged a fatigue divergence in the crowded US and Korea semiconductor leadership; the book rotated half the basket into the precious-metals-miner rebound and defensive staples.</p>
+        </td>
+      </tr></table>
+    </td></tr>
+  </table>
+
+  <!-- Phase 2, rebalance 21 May, wrapped in a grey panel -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#F2F4F6" class="panel-bg" style="background-color:#F2F4F6;margin:14px 0 0 0;">
+    <tr><td style="padding:18px 20px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td colspan="3" style="padding:0 0 6px 0;border-bottom:2px solid #0B1B3F;">
+            <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:700;color:#0B1B3F;letter-spacing:2px;text-transform:uppercase;margin:0;">Phase 2 &middot; Rebalance &middot; 10 June</p>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" class="holding-name-mob" style="padding:13px 0;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#0B1B3F;">NEM &middot; GOLD &middot; AEM &middot; KGC &middot; WPM &middot; FNV &middot; AMAT</td>
+          <td align="right" valign="middle" width="50" class="holding-wt-mob" style="padding:13px 16px 13px 8px;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#3A3F47;">50%</td>
+          <td align="right" valign="middle" width="100" class="holding-tag-mob" style="padding:13px 0;border-bottom:1px solid #D9DDE2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#3A3F47;">Gold Miners</td>
+        </tr>
+        <tr>
+          <td valign="middle" class="holding-name-mob" style="padding:13px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#0B1B3F;">LRCX &middot; KLAC &middot; MU &middot; INTC &middot; KO &middot; PG &middot; WMT</td>
+          <td align="right" valign="middle" class="holding-wt-mob" style="padding:13px 16px 13px 8px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:#3A3F47;">50%</td>
+          <td align="right" valign="middle" class="holding-tag-mob" style="padding:13px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#3A3F47;">Semi Eq + Staples</td>
+        </tr>
+        <tr><td colspan="3" style="padding:10px 0 0 0;"><p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-style:italic;color:#6B7280;margin:0;line-height:1.5;">Gold miners, retained semi-equipment and defensive staples; full-window +6.54% vs ACWI +2.21%, a +4.32pp excess.</p></td></tr>
+      </table>
+    </td></tr>
+  </table>
+
+  <!-- BULLETPROOF BUTTONS, primary CTA is the .xlsx download so readers can replicate the exact basket -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:22px 0 0 0;"><tr>
+    <td bgcolor="#0B1B3F" class="navy-bg btn-stack" style="background-color:#0B1B3F !important;"><a href="https://emmajoulin1009-hash.github.io/newsletter-assets/Parallax_Portfolio_of_the_Week_2026-06-15.xlsx" download="Parallax_Portfolio_of_the_Week_2026-06-15.xlsx" class="btn-mob btn-mob-block" style="display:inline-block;background-color:#0B1B3F;color:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:13px 18px;text-decoration:none;letter-spacing:-0.005em;">Portfolio of the Week &darr;</a></td>
+    <td width="8" class="btn-spacer">&nbsp;</td>
+    <td class="outline-btn btn-stack" style="border:1.5px solid #0B1B3F;"><a href="https://parallax.chicago.global/analyzer/create-portfolio" class="btn-mob outline-btn btn-mob-block" style="display:inline-block;background-color:#FFFFFF;color:#0B1B3F;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:11.5px 16.5px;text-decoration:none;letter-spacing:-0.005em;">Open in Analyzer</a></td>
+    <td width="8" class="btn-spacer">&nbsp;</td>
+    <td class="outline-btn btn-stack-last" style="border:1.5px solid #0B1B3F;"><a href="https://parallax.chicago.global/assessment" class="btn-mob outline-btn btn-mob-block" style="display:inline-block;background-color:#FFFFFF;color:#0B1B3F;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:11.5px 16.5px;text-decoration:none;letter-spacing:-0.005em;">Stress-Test Your Book</a></td>
+  </tr></table>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#6B7280;margin:8px 0 0 0;line-height:1.5;">Download the .xlsx and upload under <em>Analyzer &rarr; New analysis</em> to replicate the basket.</p>
+
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:22px 0 6px 0;">Powered by Parallax Builder</p>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-style:italic;color:#6B7280;margin:0;line-height:1.5;">Short-window result &middot; beta 2.64, Sharpe 4.48, info ratio 4.96, max drawdown &minus;4.08%, +4.32pp excess vs ACWI. Generated from the Parallax six-factor framework, rebalanced once on 10 June. Not investment advice. Past performance not indicative of future results.</p>
+</td></tr>
+
+<!-- ============ CARD 03, THREE CHECKS ============ -->
+<tr><td id="checks" bgcolor="#1A2C6B" class="px-lg" style="background-color:#1A2C6B;padding:24px 32px;border-top:1px solid #E5E7EB;">
+  <a name="checks"></a>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;"><span style="display:inline-block;width:24px;height:24px;background-color:#FFFFFF;color:#0B1B3F;border-radius:50%;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;margin-right:10px;vertical-align:middle;text-align:center;line-height:24px;">03</span> Three Checks for Your Book &nbsp;&middot;&nbsp; This Week</p>
+  <h2 class="h2-mob" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;color:#FFFFFF;margin:0 0 20px 0;letter-spacing:-0.015em;line-height:1.25;">Three diagnostics worth running this week.</h2>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#C8D0DC;margin:0 0 22px 0;line-height:1.6;">A crowded US semi-equipment leg, a gold-miner leadership run, and an oil slide repricing the FOMC path. Run these three checks in the Console.</p>
+
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 14px 0;"><tr>
+    <td width="3" bgcolor="#6FC3E8" style="background-color:#6FC3E8;width:3px;padding:0;font-size:0;line-height:0;"></td>
+    <td bgcolor="#ffffff" style="background-color:#ffffff;padding:22px 26px;">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 6px 0;">01 &middot; Crowding</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 8px 0;line-height:1.3;">US semi-equipment looks extended after an 82% YTD run</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.6;">The rebound was led by Asia semis (+14.9% WTD) and dip-buyers, while US semis lagged (&minus;0.8% WTD) despite an 82.4% YTD gain. Check whether your chip exposure is crowding the most-extended leg.</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0;">Console &middot; <em>Quick Portfolio Scores &rarr; Factor history</em></p>
+  </td></tr></table>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 14px 0;"><tr>
+    <td width="3" bgcolor="#6FC3E8" style="background-color:#6FC3E8;width:3px;padding:0;font-size:0;line-height:0;"></td>
+    <td bgcolor="#ffffff" style="background-color:#ffffff;padding:22px 26px;">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 6px 0;">02 &middot; Concentration</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 8px 0;line-height:1.3;">Gold miners led, but breadth is still narrow</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.6;">Precious metals ran +9.4% WTD with bullion near records, yet only 18 of 39 markets closed positive. A miner leadership leg can carry a book, but check it is a deliberate position, not a default tilt.</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0;">Console &middot; <em>Macro Analyst &rarr; Country breakdown</em></p>
+  </td></tr></table>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 22px 0;"><tr>
+    <td width="3" bgcolor="#6FC3E8" style="background-color:#6FC3E8;width:3px;padding:0;font-size:0;line-height:0;"></td>
+    <td bgcolor="#ffffff" style="background-color:#ffffff;padding:22px 26px;">
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 6px 0;">03 &middot; Rates &amp; oil</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#0B1B3F;margin:0 0 8px 0;line-height:1.3;">The Fed decides today as the oil-driven inflation overhang eases</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 10px 0;line-height:1.6;">Brent slid toward $80 and the 10Y sits at 4.47% into a hold widely expected at 3.50&ndash;3.75%. Stress your book against a hawkish dot plot, the path matters more than today&rsquo;s level.</p>
+    <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:1.5px;text-transform:uppercase;margin:0;">Console &middot; <em>Macro Analyst &rarr; Rates &amp; inflation</em></p>
+  </td></tr></table>
+
+  <!-- BULLETPROOF BUTTONS, dark section: filled button is white-on-navy, outline button is white border + white text -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+    <td bgcolor="#FFFFFF" class="btn-stack" style="background-color:#FFFFFF;"><a href="https://parallax.chicago.global/analyzer/manage-portfolios" class="btn-mob btn-mob-block" style="display:inline-block;background-color:#FFFFFF;color:#0B1B3F;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:13px 22px;text-decoration:none;letter-spacing:-0.005em;">Run These Checks on Parallax</a></td>
+    <td width="10" class="btn-spacer">&nbsp;</td>
+    <td class="btn-stack-last" style="border:1.5px solid #FFFFFF;"><a href="https://docs.chicago.global/methodology/overview" class="btn-mob btn-mob-block" style="display:inline-block;background-color:#1A2C6B;color:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:11.5px 20.5px;text-decoration:none;letter-spacing:-0.005em;">Read the Methodology</a></td>
+  </tr></table>
+
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-style:italic;color:#9CA3AF;margin:22px 0 0 0;line-height:1.5;">Parallax produces scored evidence, telemetry, and educational context. Every investment decision remains with the reader. This material is not investment advice.</p>
+</td></tr>
+
+<!-- ============ CARD 04, PARALLAX UPDATES ============ -->
+<tr><td id="platform" bgcolor="#FFFFFF" class="white-bg px-lg" style="background-color:#FFFFFF;padding:24px 32px;border-top:1px solid #E5E7EB;">
+  <a name="platform"></a>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;"><span style="display:inline-block;width:24px;height:24px;background-color:#0B1B3F;color:#FFFFFF;border-radius:50%;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;margin-right:10px;vertical-align:middle;text-align:center;line-height:24px;">04</span> Parallax Updates &nbsp;&middot;&nbsp; What Shipped This Cycle</p>
+  <h2 class="h2-mob" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;color:#0B1B3F;margin:0 0 16px 0;letter-spacing:-0.015em;line-height:1.25;">New on the platform.</h2>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#3A3F47;margin:0 0 22px 0;line-height:1.6;"><strong style="color:#0B1B3F;">Parallax 2.0 launches 29 June</strong>, a new format built on user feedback, with a redesigned flow and rethought UX from portfolio upload to insight output. Coverage refreshed across <strong>399 baskets across 39 markets</strong> through the 16 June close.</p>
+
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+    <td class="stack panel-bg" width="32%" valign="top" bgcolor="#FFF8E7" style="background-color:#FFF8E7;padding:18px;border-top:3px solid #E5B23C;" height="220">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" style="height:100%;"><tr><td valign="top" style="padding:0 0 16px 0;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;">01 &middot; Coming 29 June</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.5;"><strong style="color:#0B1B3F;">Parallax 2.0.</strong> New format incorporating direct feedback on user flow and experience. Cleaner from upload to output.</p>
+      </td></tr><tr><td valign="bottom" align="left" style="padding:0;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#0B1B3F" class="navy-bg btn-stack" style="background-color:#0B1B3F !important;"><a href="https://parallax.chicago.global/login" class="btn-mob-block" style="display:inline-block;background-color:#0B1B3F;color:#FFFFFF;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;padding:9px 14px;text-decoration:none;line-height:1.2;">Try It on Parallax</a></td></tr></table>
+      </td></tr></table>
+    </td>
+    <td class="stack-gap" width="2%">&nbsp;</td>
+    <td class="stack panel-bg" width="32%" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6;padding:18px;" height="220">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" style="height:100%;"><tr><td valign="top" style="padding:0 0 16px 0;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;">02 &middot; REST API</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.5;">Same engine, headless. For books kept in a Google Sheet, custom dashboard, or Notion. Per-call traceability in every response.</p>
+      </td></tr><tr><td valign="bottom" align="left" style="padding:0;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#F2F4F6" class="outline-btn btn-stack" style="border:1.5px solid #0B1B3F;background-color:#F2F4F6;"><a href="https://docs.chicago.global/api-reference/introduction" class="outline-btn btn-mob-block" style="display:inline-block;background-color:#F2F4F6;color:#0B1B3F;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;padding:7.5px 12.5px;text-decoration:none;line-height:1.2;">API Setup Guide</a></td></tr></table>
+      </td></tr></table>
+    </td>
+    <td class="stack-gap" width="2%">&nbsp;</td>
+    <td class="stack panel-bg" width="32%" valign="top" bgcolor="#F2F4F6" style="background-color:#F2F4F6;padding:18px;" height="220">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" style="height:100%;"><tr><td valign="top" style="padding:0 0 16px 0;">
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;color:#0B1B3F;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px 0;">03 &middot; MCP</p>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0;line-height:1.5;">Parallax as a tool inside Claude, ChatGPT, or your own LLM workflow. 32 endpoints, served where you already work.</p>
+      </td></tr><tr><td valign="bottom" align="left" style="padding:0;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#F2F4F6" class="outline-btn btn-stack" style="border:1.5px solid #0B1B3F;background-color:#F2F4F6;"><a href="https://calendly.com/arnav-chicago/30min" class="outline-btn btn-mob-block" style="display:inline-block;background-color:#F2F4F6;color:#0B1B3F;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;padding:7.5px 12.5px;text-decoration:none;line-height:1.2;">Talk to the Team</a></td></tr></table>
+      </td></tr></table>
+    </td>
+  </tr></table>
+
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6B7280;margin:22px 0 0 0;line-height:1.55;">Console &middot; AI Portfolio Builder &middot; REST &middot; MCP: same engine, four surfaces. Existing users find the new Builder in the Console sidebar.</p>
+</td></tr>
+
+
+<!-- ============ FOOTER ============ -->
+<tr><td bgcolor="#FFFFFF" class="white-bg" align="center" style="background-color:#FFFFFF;padding:36px 32px 28px 32px;border-top:1px solid #E5E7EB;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 4px auto;"><tr>
+    <td style="padding-right:8px;line-height:0;width:60px;height:60px;"><img src="https://emmajoulin1009-hash.github.io/newsletter-assets/parallax-logo-footer.png" alt="Parallax" width="60" height="33" border="0" style="display:block;border:0;outline:none;text-decoration:none;width:60px;height:33px;"></td>
+    <td valign="middle" style="font-family:'Switzer','Aptos Display','Aptos','Inter',sans-serif;font-size:20px;font-weight:400;color:#0B1B3F;letter-spacing:1.8px;;text-transform:uppercase">Parallax</td>
+  </tr></table>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:600;color:#6B7280;letter-spacing:3px;text-transform:uppercase;margin:0 0 16px 0;">By Chicago Global</p>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#3A3F47;margin:0 0 14px 0;line-height:1.6;">Get in touch &nbsp;&middot;&nbsp; <a href="mailto:info@chicago.global" style="color:#0B1B3F;text-decoration:underline;font-weight:600;">info@chicago.global</a> &nbsp;&middot;&nbsp; <a href="https://docs.chicago.global" style="color:#0B1B3F;text-decoration:underline;font-weight:600;">docs.chicago.global</a> &nbsp;&middot;&nbsp; <a href="https://telemetry.chicago.global" style="color:#0B1B3F;text-decoration:underline;font-weight:600;">telemetry.chicago.global</a></p>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;font-weight:600;color:#6B7280;letter-spacing:3px;text-transform:uppercase;margin:0 0 10px 0;">Parallax &nbsp;&middot;&nbsp; Chicago Global &nbsp;&middot;&nbsp; MAS CMS101590</p>
+  <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;color:#6B7280;line-height:1.6;margin:0 0 10px 0;">
+    <a href="[[webversion]]" style="color:#1E5C9F;text-decoration:underline;font-weight:600;">View in browser</a>
