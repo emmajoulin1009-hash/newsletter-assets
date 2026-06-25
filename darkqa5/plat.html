@@ -20,8 +20,8 @@
   body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#06101C; }
   /* Lock dark mode, keep navy panels navy, not auto-inverted */
   :root { color-scheme: dark light; supported-color-schemes: light only; }
-  [data-ogsc] .navy-bg, [data-ogsb] .navy-bg { background-color:#E9D8B0 !important; }
-  [data-ogsc] .ticker-bg, [data-ogsb] .ticker-bg { background-color:#E9D8B0 !important; }
+  [data-ogsc] .navy-bg, [data-ogsb] .navy-bg { background-color:#0A1726 !important; }
+  [data-ogsc] .ticker-bg, [data-ogsb] .ticker-bg { background-color:#070F1A !important; }
   [data-ogsc] .panel-bg, [data-ogsb] .panel-bg { background-color:#14213D !important; }
   [data-ogsc] .white-bg, [data-ogsb] .white-bg { background-color:#0B1426 !important; }
   [data-ogsc] .navy-text, [data-ogsb] .navy-text { color:#E9D8B0 !important; }
@@ -29,15 +29,15 @@
   /* Background locks for clients that respect prefers-color-scheme (Apple Mail), keep brand colors stable when the device is in dark mode. Outlined buttons stay navy because the white bg they sit on stays white via the .white-bg lock. */
   [data-ogsc] .alert-bg, [data-ogsb] .alert-bg { background-color:#11293F !important; }
   @media (prefers-color-scheme: dark) {
-    .ticker-bg { background-color:#E9D8B0 !important; }
-    .navy-bg { background-color:#E9D8B0 !important; }
+    .ticker-bg { background-color:#070F1A !important; }
+    .navy-bg { background-color:#0A1726 !important; }
     .panel-bg { background-color:#14213D !important; }
     .white-bg { background-color:#0B1426 !important; }
     .alert-bg { background-color:#11293F !important; }
   }
   /* Gmail mobile dark-wrapper selectors, keep ONLY background locks, no color swaps, so outlined buttons stay navy on locked-white bg */
-  u + .body .ticker-bg, .gmail-dark .ticker-bg, .darkmode .ticker-bg { background-color:#E9D8B0 !important; }
-  u + .body .navy-bg, .gmail-dark .navy-bg, .darkmode .navy-bg { background-color:#E9D8B0 !important; }
+  u + .body .ticker-bg, .gmail-dark .ticker-bg, .darkmode .ticker-bg { background-color:#070F1A !important; }
+  u + .body .navy-bg, .gmail-dark .navy-bg, .darkmode .navy-bg { background-color:#0A1726 !important; }
   u + .body .panel-bg, .gmail-dark .panel-bg, .darkmode .panel-bg { background-color:#14213D !important; }
   u + .body .white-bg, .gmail-dark .white-bg, .darkmode .white-bg { background-color:#0B1426 !important; }
   u + .body .alert-bg, .gmail-dark .alert-bg, .darkmode .alert-bg { background-color:#11293F !important; }
@@ -115,7 +115,7 @@
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
     <tr>
       <!-- Telemetry snapshot (navy) -->
-      <td class="stack navy-bg" width="55%" valign="top" bgcolor="#0A1726" style="background-color:#E9D8B0 !important;padding:24px 22px;">
+      <td class="stack navy-bg" width="55%" valign="top" bgcolor="#0A1726" style="background-color:#0A1726 !important;padding:24px 22px;">
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;color:#9FB0C4;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px 0;">Telemetry Snapshot &nbsp;&middot;&nbsp; AS OF 24 Jun 2026</p>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#FFFFFF;margin:0 0 20px 0;letter-spacing:-0.01em;line-height:1.3;">Selective rotation as the Fed flips to a hike and a $1.3T AI unwind hits the tape. US breadth held while South Korea tripped circuit breakers; Brent slid to $73.50.</p>
 
