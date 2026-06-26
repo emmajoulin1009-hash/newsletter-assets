@@ -42,7 +42,6 @@
   u + .body .white-bg, .gmail-dark .white-bg, .darkmode .white-bg { background-color:#0E1A30 !important; }
   u + .body .alert-bg, .gmail-dark .alert-bg, .darkmode .alert-bg { background-color:#16253F !important; }
   @media screen and (max-width: 600px) {
-    .s02btn { display:block !important; width:auto !important; margin:0 auto 8px auto !important; }
     .container { width:100% !important; max-width:100% !important; }
     /* All tables collapse to full-width on mobile */
     table { width:100% !important; }
@@ -71,6 +70,9 @@
     img { max-width:100% !important; height:auto !important; }
     /* Prevent any fixed-width inner cells from causing overflow */
     td { max-width:100% !important; }
+  }
+  @media screen and (max-width: 480px) {
+    .s02btn { display:block !important; width:auto !important; margin:0 auto 8px auto !important; }
   }
     .btn-auto, table.btn-auto, .btn-row, table.btn-row { width:auto !important; max-width:100% !important; }
 </style>
