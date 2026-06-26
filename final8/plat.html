@@ -42,6 +42,7 @@
   u + .body .white-bg, .gmail-dark .white-bg, .darkmode .white-bg { background-color:#0E1A30 !important; }
   u + .body .alert-bg, .gmail-dark .alert-bg, .darkmode .alert-bg { background-color:#16253F !important; }
   @media screen and (max-width: 600px) {
+    .s02btn { display:block !important; width:auto !important; margin:0 auto 8px auto !important; }
     .container { width:100% !important; max-width:100% !important; }
     /* All tables collapse to full-width on mobile */
     table { width:100% !important; }
@@ -304,13 +305,12 @@
     </td></tr>
   </table>
 
-  <!-- §02 CTAs: centered inline-block buttons that wrap gracefully (never clip) -->
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:18px 0 0 0;"><tr><td align="center" style="text-align:center;white-space:nowrap;">
-    <a href="https://raw.githack.com/emmajoulin1009-hash/newsletter-assets/main/Parallax_Portfolio_of_the_Week_2026-06-29.xlsx" download="Parallax_Portfolio_of_the_Week_2026-06-29.xlsx" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 13px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px;mso-padding-alt:11px 13px 11px 13px;white-space:nowrap;">Download Portfolio &darr;</a>
-    <a href="https://parallax.chicago.global/analyzer/create-portfolio" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 13px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px;mso-padding-alt:11px 13px 11px 13px;white-space:nowrap;">Open in Analyzer</a>
-    <a href="https://parallax.chicago.global/assessment" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 13px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px;mso-padding-alt:11px 13px 11px 13px;white-space:nowrap;">Stress-Test Book</a>
+  <!-- §02 CTAs: inline-block, one line on desktop, STACK on mobile (cross-device safe) -->
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:18px 0 0 0;"><tr><td align="center" style="text-align:center;">
+    <a href="https://raw.githack.com/emmajoulin1009-hash/newsletter-assets/main/Parallax_Portfolio_of_the_Week_2026-06-29.xlsx" download="Parallax_Portfolio_of_the_Week_2026-06-29.xlsx" class="s02btn" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 14px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px 6px 3px;mso-padding-alt:11px 14px 11px 14px;white-space:nowrap;">Download Portfolio &darr;</a>
+    <a href="https://parallax.chicago.global/analyzer/create-portfolio" class="s02btn" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 14px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px 6px 3px;mso-padding-alt:11px 14px 11px 14px;white-space:nowrap;">Open in Analyzer</a>
+    <a href="https://parallax.chicago.global/assessment" class="s02btn" style="display:inline-block;background-color:#E9D8B0;color:#0A1422;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;padding:11px 14px;text-decoration:none;letter-spacing:-0.01em;line-height:1.1;border-radius:0;margin:0 3px 6px 3px;mso-padding-alt:11px 14px 11px 14px;white-space:nowrap;">Stress-Test Book</a>
   </td></tr></table>
-  </tr></table>
   <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#8A9AB0;margin:8px 0 0 0;line-height:1.5;">Download the .xlsx and upload under <em>Analyzer &rarr; New analysis</em> to replicate the basket.</p>
 
   <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:600;color:#8A9AB0;letter-spacing:1.5px;text-transform:uppercase;margin:22px 0 6px 0;">Powered by Parallax Builder</p>
