@@ -46,3 +46,10 @@ python3 host-images-swap.py
 ## Not a code repo
 
 Don't add scripts, drafts, or HTML here — this is asset-only. The newsletter HTML generators live in `Downloads/outputs/` and reference these URLs at send time via `host-images-swap.py`.
+hero-2026-06-08.jpg used for Issue 25 (8 June 2026)
+
+## Hero rotation log
+- hero-2026-05-29.jpg — Issue 22
+- hero-2026-06-02.jpg — Issue 23
+- hero-2026-06-03.jpg — Issue 24
+- hero-2026-06-08.jpg — Issue 25 (generated: Parallax branded navy/chart)
